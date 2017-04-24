@@ -1,0 +1,33 @@
+.pizzas {
+    background-color: #ff5a07;
+    color: #212121;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.pizzas__item {
+    overflow: hidden;
+}
+
+.pizzas__hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    color: #fff;
+    height: 256px;
+    left: 0;
+    padding-top: 3rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    width: 256px;
+}
+.pizzas__item:hover .pizzas__hover {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+.pizzas__hover strong {
+    color: #ff5a07;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #000;
+}

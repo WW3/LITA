@@ -1,0 +1,62 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Caveat Brush', cursive;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html {
+    font-size: 20px;
+}
+.relative {
+    position: relative;
+}
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.orange {
+    color: #ff5a07;
+}
+.wrapp {
+    background-color: #212121;
+}
+.content-wrapp {
+    position: relative;
+}
+.section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.title {
+    color: #ff5a07;
+    text-align: center;
+    line-height: 2;
+    text-shadow: 1px 1px #000;
+}
+.title-white {
+    color: #f8f8f8;
+}
+.title-big {
+    font-size: 5rem;    
+}
+.title-medium {
+    font-size: 3rem;
+}
+
+.header {
+    background-color: #8d2701;
+    background-image: url(../images/header-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-bottom: solid 1px #000;
+    border-top: solid 1px #000;
+    height: 94vh;
+}
+
+
+

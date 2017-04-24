@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/pizzas.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <title>The open sauce pizza project</title>
+</head>
+<body>
+    <div id="__wrapp" class="wrapp">
+        <div class="content-wrapp">
+            <div class="section nav">
+                <ul>
+                    <li><a href="#__about">ABOUT</a></li>
+                    <li class="relative">
+                        <a>PIZZA</a>
+                        <ul>
+                            <li><a href="#__pizza_fresh">Fresh</a></li>
+                            <li><a href="#__pizza_nutritious">Nutritious</a></li>
+                            <li><a href="#__pizza_tasty">Tasty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#__gallery">GALLERY</a></li>
+                    <li><a href="#__contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="section header"></div>
+            <div class="main">
+                <div class="title title-big">We Love Pizzas</div>
+                <div id="__about" class="section about">
+                    <div class="title title-medium">About us</div>
+                    <p>
+                        We are a small group of friends who just love pizza so we decided to follow our passion and opened a pizza shop.
+                    </p>
+                    <p>
+                        After a short while who noticed most of our clients are devs, and since we love pizza we always eat together with our customers, chating with them about life.
+                    </p>
+                    <p>
+                        And that's how we evolved to be the first open source pizza shop on earth! 
+                        <br>
+                        and through open discussion we arrived at the coolest name on the planet for a pizza shop: "The Open Sauce Pizza"!
+                    </p>
+                </div>
+                <div class="section pizzas">
+                    <div class="title title-medium title-white">Our Pizzas</div>
+                    <div class="flex">
+                        <div id="__pizza_fresh" class="relative pizzas__item">
+                            <img class="pizzas__img" src="assets/images/pizza-icon-1.png">
+                            <div class="pizzas__hover">
+                                <strong>Fresh</strong>
+                                <br>
+                                All our ingredients are 
+                                <br>
+                                100% fresh on a daily basis.
+                            </div>
+                        </div>
+                        <div id="__pizza_nutritious" class="relative pizzas__item">
+                            <img class="pizzas__img" src="assets/images/pizza-icon-2.png">
+                            <div class="pizzas__hover">
+                                <strong>Nutritious</strong>
+                                <br> 
+                                All our pizzas are based on 
+                                <br>
+                                natural glooten free ingredients.
+                            </div>
+                        </div>
+                        <div id="__pizza_tasty" class="relative pizzas__item">
+                            <img class="pizzas__img" src="assets/images/pizza-icon-3.png">
+                            <div class="pizzas__hover">
+                                <strong>Tasty</strong>
+                                <br>
+                                Yup, that's what our customers 
+                                <br>
+                                assert on a daily basis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="__gallery" class="section">
+                    <div class="title title-medium title-white">Our Pizza Gallery</div>
+                    <div class="slider">
+                        <span id="__prev" class="slider__prev"> << </span>
+                        <div class="slider__pics">
+                            <div id="__sInner" class="slider__pics-inner">
+                                <div class="slider__pic"><img src="assets/images/pizza_egg.jpg"></div>
+                                <div class="slider__pic"><img src="assets/images/pizza_mashroom.jpg"></div>
+                                <div class="slider__pic"><img src="assets/images/pizza_pepperoni.jpg"></div>
+                                <div class="slider__pic"><img src="assets/images/pizza_spinach.jpg"></div>
+                            </div>
+                        </div>
+                        <span id="__next" class="slider__next"> >> </span>
+                    </div>
+                </div>
+                <div class="section contact">
+                    <span id="__contact" class="contact__button">CONTACT US NOW!</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog" class="off">
+            <form action="." method="post" id="__form" class="dialog__form">
+                <span id="__close" class="dialog__close">x</span>
+                <p id="__dialog__text" class="dialog__text">Please fill in your details and we'll get back to you in a few minutes</p>
+                <div class="dialog__field">
+                    <span class="dialog__label required">Full name</span>
+                    <input id="name" class="dialog__input required">
+                </div>
+                <div class="dialog__field">
+                    <span class="dialog__label required">E-mail</span>
+                    <input id="email" class="dialog__input required">
+                </div>
+                <div class="dialog__field">
+                    <span class="dialog__label required">Phone</span>
+                    <input id="phone" class="dialog__input required">
+                </div>
+                <div class="dialog__field">
+                    <span class="dialog__label">Message</span>
+                    <textarea id="text" class="dialog__input dialog__input-textarea"></textarea>
+                </div>
+                <div class="dialog__field dialog__field-large">
+                    <span id="__checkbox" class="on dialog__checkbox"></span>
+                    <span class="dialog__label dialog__label-inline">Approve spam</span>
+                </div>
+                <div class="dialog__field">
+                    <button type="submit" class="contact__button contact__button-small">SEND</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

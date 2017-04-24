@@ -1,0 +1,36 @@
+.contact {
+    background-image: url(../images/form-bg2.jpg);
+    background-position: center center;
+    background-size: contain;
+    border-top: solid 1px #962900;
+    text-align: center;
+}
+.contact__button {
+    background-color: #f96b23;
+    border-bottom: solid 2px #000;
+    border-radius: 2rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 0.5em 1em;
+    text-shadow: 3px 3px orangered;
+    transition: all 0.25s ease-in;
+    width: auto;
+}
+.contact__button:hover {
+    background-color: #fb7d3d;
+    cursor: pointer;
+    text-shadow: 6px 6px orangered;
+    transition: all 0.25s ease-in;
+}
+.contact__button-small {
+    border-bottom: solid 3px orangered;
+    border-left: solid 1px #f96b23;
+    border-right: solid 1px #f96b23;
+    border-top: solid 1px #f96b23;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding: 0.125em 1.25em;
+}
