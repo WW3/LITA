@@ -70,17 +70,18 @@
     width: 1rem;
 }
 .dialog__checkbox:after {
+    bottom: 0;
     color: #fff;
     content: "";
-    font-size: 1.75rem;
     left: 0;
     position: absolute;
+    right: -0.25rem;
     text-shadow: 1px 1px #000;
-    top: -1.25rem;
+    top: -0.25rem;
     z-index: 2;
 }
 .dialog__checkbox.on:after {
-    content: "\221A";
+    background: transparent url(/lita/assets/images/check.png) no-repeat center center;
 }
 .dialog__input {
     border: solid 3px #222;
