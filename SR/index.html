@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/pizzas.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <title>The open sauce pizza project</title>
+</head>
+<body>
+    <div id="__wrapp" class="wrapp">
+        <div id="__contntWrapp" class="content-wrapp">
+            <nav class="section nav">
+                <ul>
+                    <li><a href="#__about">ABOUT</a></li>
+                    <li class="relative">
+                        <a href="#" aria-haspopup="true">PIZZA</a>
+                        <ul>
+                            <li><a href="#__pizza_fresh">Fresh</a></li>
+                            <li><a href="#__pizza_nutritious">Nutritious</a></li>
+                            <li><a href="#__pizza_tasty">Tasty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#__gallery">GALLERY</a></li>
+                    <li><a href="#__contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <header class="section header"><div class="sr-only">Open Sauce Pizza</div></header>
+            <main class="main">
+                <h1 class="title title-big">We Love Pizzas</h1>
+                <section id="__about" aria-labelledby="__about_title" class="section about">
+                    <h2 id="__about_title" class="title title-medium" aria-hidden="true">About us</h2>
+                    <p>
+                        We are a small group of friends who just love pizza so we decided to follow our passion and opened a pizza shop.
+                    </p>
+                    <p>
+                        After a short while who noticed most of our clients are devs, and since we love pizza we always eat together with our customers, chating with them about life.
+                    </p>
+                    <p>
+                        And that's how we evolved to be the first open source pizza shop on earth! 
+                        <br>
+                        and through open discussion we arrived at the coolest name on the planet for a pizza shop: "The Open Sauce Pizza"!
+                    </p>
+                </section>
+
+                <section class="section pizzas" aria-labelledby="__pizzas_title">
+                    <h2 id="__pizzas_title" aria-hidden="true" class="title title-medium title-white">Our Pizzas</h2>
+                    <div class="flex">
+                        <div tabindex="0" id="__pizza_fresh" class="relative pizzas__item">
+                            <img class="pizzas__img" src="assets/images/pizza-icon-1.png" alt="">
+                            <div class="pizzas__hover">
+                                <h3>Fresh</h3>
+                                All our ingredients are 
+                                <br>
+                                100% fresh on a daily basis.
+                            </div>
+                        </div>
+                        <div tabindex="0" id="__pizza_nutritious" class="relative pizzas__item">
+                            <img class="pizzas__img" src="assets/images/pizza-icon-2.png" alt="">
+                            <div class="pizzas__hover">
+                                <h3>Nutritious</h3>
+                                All our pizzas are based on 
+                                <br>
+                                natural glooten free ingredients.
+                            </div>
+                        </div>
+                        <div tabindex="0" id="__pizza_tasty" class="relative pizzas__item">
+                            <img class="pizzas__img" src="assets/images/pizza-icon-3.png" alt="">
+                            <div class="pizzas__hover">
+                                <h3>Tasty</h3>
+                                Yup, that's what our customers 
+                                <br>
+                                assert on a daily basis.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="__gallery" class="section" aria-label="gallery" aria-labelledby="__gallery_title">
+                    <h2 id="__gallery_title" aria-hidden="true" class="title title-medium title-white">Our Pizza Gallery</h2>
+                    <div class="slider">
+                        <button aria-label="previous" id="__prev" class="slider__prev"> << </button>
+                        <button aria-label="next" id="__next" class="slider__next"> >> </button>
+                        <div class="slider__pics">
+                            <div aria-live="polite" aria-relevant="additions" id="__sInner" class="slider__pics-inner">
+                                <div aria-hidden="false" class="slider__pic"><img alt="egg pizza" src="assets/images/pizza_egg.jpg"></div>
+                                <div aria-hidden="true" class="slider__pic"><img alt="magical mashrooms" src="assets/images/pizza_mashroom.jpg"></div>
+                                <div aria-hidden="true" class="slider__pic"><img alt="pepperoni pizza" src="assets/images/pizza_pepperoni.jpg"></div>
+                                <div aria-hidden="true" class="slider__pic"><img alt="Spinach pizza for you sailors" src="assets/images/pizza_spinach.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section contact">
+                    <button id="__contact" class="contact__button">CONTACT US NOW!</button>
+                </section>
+            </main>
+        </div>
+
+        <div inert role="dialog" aria-label="contact us" aria-describedby="__dialog__text" id="dialog" class="off">
+            <form action="." method="post" id="__form" class="dialog__form" novalidate="true">
+                <p id="__dialog__text" class="dialog__text">Please fill in your details and we'll get back to you in a few minutes</p>
+                <div id="__form_error" aria-live="assertive" aria-relevant="additions" aria-atomic="true" class="sr-only"></div>
+                <div class="dialog__field">
+                    <label for="name" class="dialog__label required"><span aria-hidden="true">*</span> name</label>
+                    <input id="name" class="dialog__input required" required data-error="Please enter your full name">
+                </div>
+                <div class="dialog__field">
+                    <label for="email" class="dialog__label required"><span aria-hidden="true">*</span>E-mail</label>
+                    <input id="email" type="email" class="dialog__input required" required data-error="please enter a valid email address">
+                </div>
+                <div class="dialog__field">
+                    <label for="phone" class="dialog__label required"><span aria-hidden="true">*</span>Phone</label>
+                    <input id="phone" type="tel" class="dialog__input required" required data-error="pleae anter a valid phone number">
+                </div>
+                <div class="dialog__field">
+                    <label for="text" class="dialog__label">Message</label>
+                    <textarea id="text" class="dialog__input dialog__input-textarea"></textarea>
+                </div>
+                <div class="dialog__field dialog__field-large">
+                    <input type="checkbox" id="__checkbox" class="dialog__checkbox">
+                    <label for="__checkbox" class="dialog__label dialog__label-inline">Approve spam</label>
+                </div>
+                <div class="dialog__field">
+                    <button type="submit" class="contact__button contact__button-small">SEND</button>
+                </div>
+                <button type="button" aria-label="close contact us dialog" id="__close" class="dialog__close">x</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/inert.min.js"></script>
+    <script src="assets/js/sr_app.js"></script>
+</body>
+</html>

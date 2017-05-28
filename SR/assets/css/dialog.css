@@ -1,0 +1,123 @@
+#dialog {
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    padding-top: 1.5rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(100vh);
+    transition: background-color 0.25s ease-in, transform 0.5s ease-out 0.25s;
+    z-index: 5;
+}
+.dialog__text {
+    line-height: 2.5;
+}
+#dialog.off {
+    display: none;
+}
+#dialog.on {
+    background-color: rgba(255, 255, 255, 0.75);
+    transform: translateY(0);
+    transition: transform 0.5s ease-in, background-color 0.25s ease-in 0.5s;
+}
+.dialog__form {
+    background-color: #363636;
+    border-radius: 1.25rem;
+    margin: 0 auto;
+    padding: 2.5vh 2.5vw;
+    position: relative;
+    width: 40vw;
+    min-width: 300px;
+    z-index: 1;
+}
+.dialog__field + .dialog__field.dialog__field-large {
+    margin: 1.5rem .25rem 1rem;
+}
+.dialog__field + .dialog__field {
+    margin-top: 0.75rem;
+}
+.dialog__label {
+    display: block;
+    line-height: 1.5;
+    padding-left: 0.75rem;
+    text-shadow: 1px 1px #000;
+}
+.dialog__label.required {
+    position: relative;
+}
+.dialog__label.required > span {
+    color: #f00;
+}
+
+.dialog__checkbox {
+    position: absolute;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+}
+.dialog__label-inline {
+    display: inline-block;
+    padding-left: 2.25rem;
+    position: relative;
+}
+.dialog__checkbox ~ .dialog__label-inline:before {
+    border: solid 3px #ff5a07;
+    border-radius: 0.125rem;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    content: "";
+    height: 1.75rem;
+    left: 0;
+    position: absolute;
+    right: -0.25rem;
+    text-shadow: 1px 1px #000;
+    top: -0.25rem;
+    width: 1.75rem;
+    z-index: 2;
+}
+.dialog__checkbox:checked ~ .dialog__label-inline:before {
+    background: transparent url(/lita/assets/images/check.png) no-repeat center center;
+}
+.dialog__checkbox:focus ~ .dialog__label-inline:before {
+    border-color: #fff;
+    color: #ff5a07;
+}
+
+.dialog__input {
+    border: solid 3px #222;
+    border-radius: 0.75rem;
+    color: #363636;
+    display: block;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    width: 100%;
+}
+.dialog__input:focus {
+    border-color: #ff5a07;
+}
+.dialog__input.invalid {
+    border-color: #f00;
+}
+.dialog__close {
+    background-color: #ff5a07;
+    border-color: #ff5a07;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 2rem;
+    line-height: 2;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    top: 0;
+    width: 2rem;
+}
+.dialog__close:hover,
+.dialog__close:focus {
+    background-color: #000;
+    border-color: #000;
+    text-shadow: none;
+}

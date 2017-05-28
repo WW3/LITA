@@ -1,0 +1,50 @@
+.nav {
+    height: 6vh;
+    text-align: center;
+}
+ul {
+   list-style: none;
+}
+.nav > ul {
+    display: table;
+    margin: 0 auto;
+    width: 50%;
+}
+.nav > ul > li {
+    display: table-cell;
+}
+.nav li > ul {
+    background-color: #212121;
+    border: solid 1px #111;
+    display: none;
+    height: 8rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+}
+.nav li.relative:hover ul,
+.nav li.relative.on ul {
+    display: block;
+    z-index: 1;
+}
+.nav li > ul > li {
+    display: block;
+}
+.nav li > ul a {
+    display: block;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+}
+.nav a {
+    color: #ff5a07;
+    display: block;
+    font-size: 1.5rem;
+    height: 100%;
+    text-decoration: none;
+}
+.nav a:hover,
+.nav a:focus {
+    color: #fff;
+}
